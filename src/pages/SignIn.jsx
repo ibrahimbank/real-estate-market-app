@@ -2,13 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
-import { doc, setDoc, serverTimestamp } from "firebase/firestore";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  updateProfile,
-} from "firebase/auth";
-import { db } from "../Firebase.config";
+// import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
