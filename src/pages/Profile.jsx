@@ -1,5 +1,5 @@
 import { getAuth, updateProfile } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { db } from "../Firebase.config";
 import { doc, updateDoc } from "firebase/firestore";
