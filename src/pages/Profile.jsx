@@ -4,8 +4,8 @@ import { useNavigate, Link } from "react-router-dom";
 import { db } from "../Firebase.config";
 import { doc, updateDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
-import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
-import homeIcon from '../assets/svg/homeIcon.svg'
+import arrowRight from "../assets/svg/keyboardArrowRightIcon.svg";
+import homeIcon from "../assets/svg/homeIcon.svg";
 
 function Profile() {
   const auth = getAuth();
@@ -96,6 +96,12 @@ function Profile() {
             />
           </form>
         </div>
+
+        <Link to="/create-listing" className="createListing">
+          <img src={homeIcon} alt="home" />
+          <p>Sell or Rent your home</p>
+          <img src={arrowRight} alt="arrow right" />
+        </Link>
       </main>
     </div>
   );
