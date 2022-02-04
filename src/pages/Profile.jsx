@@ -4,6 +4,8 @@ import { useNavigate, Link } from "react-router-dom";
 import { db } from "../Firebase.config";
 import { doc, updateDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
+import homeIcon from '../assets/svg/homeIcon.svg'
 
 function Profile() {
   const auth = getAuth();

@@ -37,7 +37,7 @@ function NavBar() {
               width="36px"
               height="36px"
             />
-            <p className={paraColor("offers")}>Offer</p>
+            <p className={paraColor("offers")}>Offers</p>
           </li>
           <li className="navbarListItem" onClick={() => navigate("/profile")}>
             <PersonOutlineIcon
