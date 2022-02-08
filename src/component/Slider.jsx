@@ -39,7 +39,6 @@ function Slider() {
         });
       });
 
-      console.log(listings);
       setListing(listings);
       setLoading(false);
     };
