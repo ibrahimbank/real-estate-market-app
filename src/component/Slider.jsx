@@ -1,19 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  collection,
-  getDocs,
-  query,
-  orderBy,
-  limit,
-  getDoc,
-} from "firebase/firestore";
+import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
 import { db } from "../Firebase.config";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Spinner from "./Spinner";
-import { toast } from "react-toastify";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -48,6 +40,10 @@ function Slider() {
 
   if (loading) {
     return <Spinner />;
+  }
+
+  if (listing.length === 0) {
+    return <></>;
   }
 
   return (
