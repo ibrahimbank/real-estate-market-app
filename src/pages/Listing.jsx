@@ -118,8 +118,8 @@ function Listing() {
               width: "100%",
             }}
             center={[listing.geoLocation.lat, listing.geoLocation.lng]}
-            zoom={13}
-            scrollWheelZoom={true}
+            zoom={7}
+            scrollWheelZoom={false}
           >
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
